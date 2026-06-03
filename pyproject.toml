@@ -1,0 +1,14 @@
+[project]
+name = "ComfyUI-OnlySeedance2.0"
+description = "ComfyUI custom nodes for Volcengine Ark Doubao Seedance 2.0 video generation (text/image/reference to video)"
+version = "1.0.0"
+license = "GPL-3.0-or-later"
+dependencies = ["Pillow", "numpy", "requests"]
+
+[project.urls]
+Repository = "https://github.com/Qiuuc/ComfyUI-OnlySeedance2.0"
+
+[tool.comfy]
+PublisherId = "qiuuc"
+DisplayName = "ComfyUI-OnlySeedance2.0"
+Icon = "🎬"
