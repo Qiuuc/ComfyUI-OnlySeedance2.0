@@ -109,9 +109,9 @@ class SeedanceInputReference(io.ComfyNode):
             ),
             inputs=[
                 _PROMPT_INPUT,
-                _grow("ref_images", "参考图", io.Image.Input("ref_image", display_name="参考图"), "ref_image", MAX_IMAGES),
-                _grow("ref_videos", "参考视频", io.Video.Input("ref_video", display_name="参考视频"), "ref_video", MAX_VIDEOS),
-                _grow("ref_audios", "参考音频", io.Audio.Input("ref_audio", display_name="参考音频"), "ref_audio", MAX_AUDIOS),
+                _grow("ref_images", "参考图", io.Image.Input("ref_image", display_name="参考图", optional=True), "ref_image", MAX_IMAGES),
+                _grow("ref_videos", "参考视频", io.Video.Input("ref_video", display_name="参考视频", optional=True), "ref_video", MAX_VIDEOS),
+                _grow("ref_audios", "参考音频", io.Audio.Input("ref_audio", display_name="参考音频", optional=True), "ref_audio", MAX_AUDIOS),
             ],
             outputs=[SeedanceMediaType.Output(display_name="内容")],
         )
